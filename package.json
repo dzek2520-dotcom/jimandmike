@@ -1,0 +1,19 @@
+{
+  "name": "jim-and-mike",
+  "version": "1.1.0",
+  "description": "Джим и Майк: Битва за пульт — игра для двоих с онлайн-режимом",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "esbuild src/game.src.js --target=chrome58 --outfile=public/game.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}
